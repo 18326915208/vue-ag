@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-example</title>
+
+    <style>
+    	*{
+    		margin:0;
+    		padding:0;
+    	}
+		body,html{
+			width:100%;
+			height:100%;
+      background:#eeeeec;
+		}
+    #app{
+      width:100%;
+      height:100%;
+       /*white-space:wrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        width:4.5rem;*/
+    }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script src="/dist/build.js"></script>
+    <script>
+    	document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + "px";
+			addEventListener("resize",function(){
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + "px";
+			})
+    </script>
+  </body>
+</html>
